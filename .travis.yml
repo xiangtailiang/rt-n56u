@@ -16,7 +16,7 @@ addons:
         autopoint, libltdl-dev, cmake ]
 
 before_script:
-    - cd /opt && mkdir images && git clone --depth=1 https://github.com/hanwckf/rt-n56u.git
+    - cd /opt && mkdir images && git clone --depth=1 https://github.com/xiangtailiang/rt-n56u.git
     - cd rt-n56u && rm -rf toolchain-mipsel/
     - git clone --depth=1 https://github.com/hanwckf/padavan-toolchain.git toolchain-mipsel && chmod u+x ./toolchain-mipsel/toolchain-3.4.x/bin/*
     - ls -Alh /opt/rt-n56u && cd /opt/rt-n56u/trunk/
